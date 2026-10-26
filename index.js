@@ -38,7 +38,7 @@ async function initialize() {
     const panel = document.createElement('details');
     panel.id = 'ag-settings';
     panel.innerHTML = `
-      <summary>Aqua Glacier · 冰川海洋 <small>0.1.0</small></summary>
+      <summary>Aqua Glacier · 冰川海洋 <small>0.1.1</small></summary>
       <div class="ag-settings-body">
         <p>獨立外觀層；不更動黑森林設定、訊息內容或模型。</p>
         <label class="ag-check"><input type="checkbox" data-ag-setting="enabled">啟用 Aqua Glacier</label>
@@ -48,7 +48,7 @@ async function initialize() {
         <label class="ag-range">插畫寬度 <output data-ag-output="size"></output><input type="range" min="42" max="110" step="1" data-ag-setting="size"></label>
         <label class="ag-check"><input type="checkbox" data-ag-setting="bubbles">緩慢泡泡動畫</label>
         <p class="ag-asset-status" role="status"></p>
-        <p>插畫採獨立窄長側邊欄，會減少聊天可用寬度。螢幕小於 375px 或輸入鍵盤開啟時自動隱藏。</p>
+        <p>插畫採左側獨立窄長側邊欄，會減少聊天可用寬度。螢幕小於 375px 或輸入鍵盤開啟時自動隱藏。</p>
         <button type="button" class="menu_button" data-ag-reset>重設 Aqua Glacier</button>
       </div>`;
     host.append(panel);

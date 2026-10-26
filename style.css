@@ -137,7 +137,8 @@
 /* Optional illustration has a RESERVED rail, never overlays chat or input. */
 :root[data-ag-theme="on"][data-ag-rail]:is(#ag-specificity, html) #sheld {
   max-width: calc(100% - var(--ag-rail-width)) !important;
-  right: var(--ag-rail-width);
+  left: var(--ag-rail-width) !important;
+  right: 0 !important;
 }
 #ag-decoration, #ag-decoration * {
   pointer-events: none !important;
@@ -152,18 +153,18 @@
 }
 #ag-decoration .ag-art {
   position: absolute;
-  right: 5px;
+  left: 5px;
   bottom: calc(var(--ag-input-height) + env(safe-area-inset-bottom, 0px) + 12px);
   width: min(var(--ag-art-width), calc(var(--ag-rail-width) - 10px));
   max-height: min(36dvh, 260px);
   object-fit: contain;
-  object-position: bottom right;
+  object-position: bottom left;
   opacity: .90;
 }
 #ag-decoration .ag-art[hidden] { display: none; }
 #ag-decoration .ag-bubbles {
   position: absolute;
-  right: 2px;
+  left: 2px;
   bottom: 20%;
   width: 16px;
   height: 130px;

@@ -9,6 +9,10 @@
       ],
       "rail": false,
       "hidden": true,
+      "artLeft": 0,
+      "artRight": 0,
+      "chatLeft": 0,
+      "chatRight": 360,
       "nonOverlapping": true,
       "overflow": false,
       "pointer": "none"
@@ -22,6 +26,10 @@
       ],
       "rail": true,
       "hidden": false,
+      "artLeft": 5,
+      "artRight": 77,
+      "chatLeft": 82,
+      "chatRight": 375,
       "nonOverlapping": true,
       "overflow": false,
       "pointer": "none"
@@ -35,6 +43,10 @@
       ],
       "rail": true,
       "hidden": false,
+      "artLeft": 5,
+      "artRight": 80,
+      "chatLeft": 85,
+      "chatRight": 390,
       "nonOverlapping": true,
       "overflow": false,
       "pointer": "none"
@@ -48,6 +60,27 @@
       ],
       "rail": true,
       "hidden": false,
+      "artLeft": 5,
+      "artRight": 81,
+      "chatLeft": 88,
+      "chatRight": 430,
+      "nonOverlapping": true,
+      "overflow": false,
+      "pointer": "none"
+    },
+    {
+      "width": 1280,
+      "loaded": true,
+      "natural": [
+        941,
+        1672
+      ],
+      "rail": true,
+      "hidden": false,
+      "artLeft": 5,
+      "artRight": 81,
+      "chatLeft": 88,
+      "chatRight": 1280,
       "nonOverlapping": true,
       "overflow": false,
       "pointer": "none"

@@ -44,3 +44,6 @@
 - 瀏覽器驗證使用本機隔離酒館副本，不是使用者的Railway正式部署。
 - GitHub blob SHA與本機圖片git hash-object相同：16f18e1615f3f254d5ad7cdb96a0e7eb336eb698。
 - 詳細結果：reports/real-asset-results.json。
+
+## 0.1.1 左側位置調整
+插畫及聊天預留空間改到左側。使用實際PNG在360、375、390、430、1280px驗證載入、左右邊界、水平溢出與pointer-events；手機聚焦隱藏仍通過。修正黑森林的強制left定位規則，沒有修改其檔案或設定。
