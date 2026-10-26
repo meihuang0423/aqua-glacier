@@ -1,4 +1,4 @@
-/* Aqua Glacier 0.1.0 — independent appearance layer.
+/* Aqua Glacier 0.1.2 — independent appearance layer.
    All variables use ag-. No .mes / .mes_text selectors, inherited global color,
    background image replacement, or third-party variable writes.
    :is(#ag-specificity, html) is a specificity fence, not a required DOM id.
@@ -134,61 +134,66 @@
   scrollbar-width: thin;
   scrollbar-color: #8ACDD5 transparent;
 }
-/* Optional illustration has a RESERVED rail, never overlays chat or input. */
-:root[data-ag-theme="on"][data-ag-rail]:is(#ag-specificity, html) #sheld {
-  max-width: calc(100% - var(--ag-rail-width)) !important;
-  left: var(--ag-rail-width) !important;
-  right: 0 !important;
-}
+/* Illustration lives in its OWN normal-flow strip above the input.
+   No left/right/width/max-width overrides on #sheld or #chat. */
 #ag-decoration, #ag-decoration * {
   pointer-events: none !important;
   user-select: none;
 }
 #ag-decoration {
-  position: fixed;
-  inset: 0;
-  z-index: 29;
+  position: relative;
+  width: 100%;
+  height: var(--ag-dock-height, 76px);
+  min-height: 0;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 6px;
   overflow: hidden;
-  contain: layout paint;
+  border-radius: 14px;
+  background: linear-gradient(100deg, rgb(189 236 233 / .30), rgb(243 252 252 / .06) 65%, transparent);
 }
+#ag-decoration[hidden],
+#ag-decoration .ag-art[hidden],
+#ag-decoration .ag-bubbles[hidden] { display: none !important; }
 #ag-decoration .ag-art {
   position: absolute;
-  left: 5px;
-  bottom: calc(var(--ag-input-height) + env(safe-area-inset-bottom, 0px) + 12px);
-  width: min(var(--ag-art-width), calc(var(--ag-rail-width) - 10px));
-  max-height: min(36dvh, 260px);
+  left: 8px;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  max-width: 32%;
   object-fit: contain;
   object-position: bottom left;
-  opacity: .90;
+  opacity: 1;
 }
-#ag-decoration .ag-art[hidden] { display: none; }
 #ag-decoration .ag-bubbles {
   position: absolute;
-  left: 2px;
-  bottom: 20%;
-  width: 16px;
-  height: 130px;
-  opacity: .45;
+  left: 76px;
+  top: 5px;
+  bottom: 5px;
+  width: min(110px, 40%);
+  opacity: .85;
 }
 #ag-decoration .ag-bubbles i {
   position: absolute;
   width: 7px;
   height: 7px;
-  border: 1px solid rgb(120 193 205 / .65);
+  border: 1px solid rgb(66 125 136 / .68);
   border-radius: 50%;
-  background: rgb(243 252 252 / .22);
+  background: rgb(243 252 252 / .45);
+  box-shadow: inset 1px 1px 0 rgb(255 255 255 / .9);
 }
-#ag-decoration .ag-bubbles i:nth-child(1) { top: 8%; left: 1px; }
-#ag-decoration .ag-bubbles i:nth-child(2) { top: 48%; left: 6px; width: 4px; height: 4px; }
-#ag-decoration .ag-bubbles i:nth-child(3) { top: 82%; left: 0; width: 9px; height: 9px; }
-#ag-decoration.ag-animate .ag-bubbles i { animation: ag-drift 14s ease-in-out infinite alternate; }
-#ag-decoration.ag-animate .ag-bubbles i:nth-child(2) { animation-delay: -5s; }
-#ag-decoration.ag-animate .ag-bubbles i:nth-child(3) { animation-delay: -9s; }
+#ag-decoration .ag-bubbles i:nth-child(1) { top: 12%; left: 3%; }
+#ag-decoration .ag-bubbles i:nth-child(2) { top: 60%; left: 48%; width: 4px; height: 4px; }
+#ag-decoration .ag-bubbles i:nth-child(3) { top: 38%; left: 83%; width: 10px; height: 10px; }
+#ag-decoration.ag-animate .ag-bubbles i { animation: ag-drift 12s ease-in-out infinite alternate; }
+#ag-decoration.ag-animate .ag-bubbles i:nth-child(2) { animation-delay: -4s; }
+#ag-decoration.ag-animate .ag-bubbles i:nth-child(3) { animation-delay: -8s; }
 @keyframes ag-drift {
-  from { transform: translateY(0); opacity: .25; }
-  to { transform: translateY(-14px); opacity: .65; }
+  from { transform: translateY(4px); opacity: .45; }
+  to { transform: translateY(-5px); opacity: 1; }
 }
-:root[data-ag-keyboard] #ag-decoration { display: none; }
+:root[data-ag-keyboard] #ag-decoration { display: none !important; }
 /* Our settings remain usable even when theme is OFF. */
 #ag-settings { margin: 10px 0; padding: 12px; border: 1px solid #8ACDD5; border-radius: 14px; }
 #ag-settings > summary { cursor: pointer; font-weight: 600; padding: 4px; }
@@ -202,10 +207,7 @@
 #ag-settings .ag-asset-status { overflow-wrap: anywhere; }
 @media (max-width: 600px) {
   :root[data-ag-theme="on"] { --ag-radius: 15px; }
-  #ag-decoration .ag-art { max-height: 28dvh; }
-}
-@media (max-width: 374px) {
-  #ag-decoration .ag-art { display: none; }
+
 }
 @media (prefers-reduced-motion: reduce) {
   #ag-decoration.ag-animate .ag-bubbles i { animation: none; }
@@ -229,4 +231,55 @@
 :root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder .drawer-content :is(h3, h4, h5) {
   color: var(--ag-readable) !important;
   text-shadow: none !important;
+}
+
+/* Chat Top Bar is a separate extension: color only its verified outer controls.
+   Original fixed height lets wrapped buttons escape on small screens. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionTopBar,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionConnectionProfiles {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 38px;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  background: var(--ag-glass) !important;
+  border-color: var(--ag-line) !important;
+  color: var(--ag-readable) !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionTopBarChatName,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionTopBarSearchInput,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionConnectionProfilesSelect {
+  min-width: 0;
+  width: auto;
+  flex: 1 1 95px;
+  max-width: 100%;
+  color: var(--ag-readable) !important;
+  background-color: #EDF9FA !important;
+  border-color: var(--ag-line) !important;
+  text-shadow: none !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionTopBar > i,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionConnectionProfilesStatus {
+  color: var(--ag-readable) !important;
+  text-shadow: none !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionTopBarSearchInput::placeholder {
+  color: var(--ag-secondary) !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionTopBarChatName option,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #extensionConnectionProfilesSelect option {
+  color: var(--ag-readable) !important;
+  background: #F3FCFC !important;
+}
+/* Finish native chrome colors without touching message HTML. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #foret-header::after {
+  background: var(--ag-aqua) !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #send_textarea {
+  border-color: var(--ag-line) !important;
+  border-radius: 14px !important;
+  clip-path: none !important;
 }

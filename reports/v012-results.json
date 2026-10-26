@@ -1,0 +1,1676 @@
+{
+  "browser": "Chromium, iPhone 13 user-agent + touch + scale=3 (NOT WebKit)",
+  "webkit": "Download blocked by environment domain policy",
+  "results": [
+    {
+      "name": "Actual TopInfoBar extension loaded",
+      "passed": true
+    },
+    {
+      "name": "foret/360 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/360 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/360 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/360 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/360 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "foret/360 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/360 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "foret/375 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/375 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/375 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/375 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/375 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "foret/375 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/375 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "foret/390 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/390 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/390 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/390 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/390 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "foret/390 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/390 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "foret/402 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/402 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/402 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/402 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/402 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "foret/402 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/402 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "foret/430 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/430 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/430 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/430 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/430 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "foret/430 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "foret/430 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "dusty/360 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/360 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/360 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/360 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/360 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "dusty/360 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 360
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/360 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "dusty/375 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/375 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/375 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/375 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/375 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "dusty/375 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 375
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/375 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "dusty/390 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/390 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/390 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/390 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/390 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "dusty/390 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 390
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/390 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "dusty/402 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/402 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/402 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/402 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/402 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "dusty/402 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 402
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/402 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "dusty/430 chat width and x unchanged",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/430 illustration visible on LEFT",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/430 dock above input without overlap",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/430 no document overflow or toolbar spill",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/430 custom message unchanged",
+      "passed": true
+    },
+    {
+      "name": "dusty/430 requested bubble animation running",
+      "passed": true,
+      "details": {
+        "sheld": {
+          "x": 0,
+          "width": 430
+        },
+        "loaded": true,
+        "art": {
+          "left": 18,
+          "right": 60.765625,
+          "bottom": 753.5,
+          "width": 42.765625,
+          "height": 76,
+          "hidden": false
+        },
+        "dock": {
+          "top": 677.5,
+          "bottom": 753.5,
+          "left": 10,
+          "hidden": false
+        },
+        "inputTop": 759.5,
+        "overflow": false,
+        "topContainsControls": true,
+        "topBackground": "rgba(243, 252, 252, 0.78)",
+        "bubbleAnimation": "ag-drift"
+      }
+    },
+    {
+      "name": "dusty/430 TopInfoBar uses aqua palette",
+      "passed": true,
+      "details": "rgba(243, 252, 252, 0.78)"
+    },
+    {
+      "name": "Embedded message button still works",
+      "passed": true
+    },
+    {
+      "name": "Chat remains scrollable",
+      "passed": true
+    },
+    {
+      "name": "Black forest tool toggle still works",
+      "passed": true
+    },
+    {
+      "name": "Native sidebar opens",
+      "passed": true
+    },
+    {
+      "name": "Decoration hides for sidebar",
+      "passed": true
+    },
+    {
+      "name": "Decoration hides on mobile input focus",
+      "passed": true
+    },
+    {
+      "name": "Keyboard-height resize keeps send form in view",
+      "passed": true
+    },
+    {
+      "name": "Decoration returns after blur/keyboard close",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion stops animation and explains why",
+      "passed": true
+    },
+    {
+      "name": "Versioned module and stylesheet load",
+      "passed": true
+    },
+    {
+      "name": "Enabled setting persists on reload",
+      "passed": true
+    },
+    {
+      "name": "Module reload leaves one dock inside input host",
+      "passed": true
+    },
+    {
+      "name": "Disable removes decoration and layout attributes",
+      "passed": true
+    },
+    {
+      "name": "No Aqua Glacier JS exceptions",
+      "passed": true,
+      "details": [
+        {
+          "message": "Unexpected token 'I', \"Internal S\"... is not valid JSON",
+          "stack": ""
+        },
+        {
+          "message": "Unexpected token 'I', \"Internal S\"... is not valid JSON",
+          "stack": ""
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "Unexpected token 'I', \"Internal S\"... is not valid JSON",
+      "stack": ""
+    },
+    {
+      "message": "Unexpected token 'I', \"Internal S\"... is not valid JSON",
+      "stack": ""
+    }
+  ]
+}

@@ -38,17 +38,17 @@ async function initialize() {
     const panel = document.createElement('details');
     panel.id = 'ag-settings';
     panel.innerHTML = `
-      <summary>Aqua Glacier · 冰川海洋 <small>0.1.1</small></summary>
+      <summary>Aqua Glacier · 冰川海洋 <small>0.1.2</small></summary>
       <div class="ag-settings-body">
         <p>獨立外觀層；不更動黑森林設定、訊息內容或模型。</p>
         <label class="ag-check"><input type="checkbox" data-ag-setting="enabled">啟用 Aqua Glacier</label>
         <label class="ag-range">玻璃不透明度 <output data-ag-output="opacity"></output><input type="range" min="55" max="98" step="1" data-ag-setting="opacity"></label>
         <label class="ag-range">背景亮度 <output data-ag-output="brightness"></output><input type="range" min="85" max="110" step="1" data-ag-setting="brightness"></label>
         <label class="ag-check"><input type="checkbox" data-ag-setting="decoration">顯示雙動物插畫</label>
-        <label class="ag-range">插畫寬度 <output data-ag-output="size"></output><input type="range" min="42" max="110" step="1" data-ag-setting="size"></label>
+        <label class="ag-range">插畫高度 <output data-ag-output="size"></output><input type="range" min="42" max="110" step="1" data-ag-setting="size"></label>
         <label class="ag-check"><input type="checkbox" data-ag-setting="bubbles">緩慢泡泡動畫</label>
         <p class="ag-asset-status" role="status"></p>
-        <p>插畫採左側獨立窄長側邊欄，會減少聊天可用寬度。螢幕小於 375px 或輸入鍵盤開啟時自動隱藏。</p>
+        <p>插畫放在輸入框上方的左側裝飾列，不縮窄聊天。輸入、開啟選單或視窗太矮時暫時隱藏。</p><p class="ag-motion-status" role="status"></p>
         <button type="button" class="menu_button" data-ag-reset>重設 Aqua Glacier</button>
       </div>`;
     host.append(panel);
@@ -68,7 +68,7 @@ async function initialize() {
         root.removeAttribute('data-ag-theme');
         root.removeAttribute('data-ag-rail');
         root.removeAttribute('data-ag-keyboard');
-        for (const name of ['--ag-glass-alpha', '--ag-brightness', '--ag-art-width', '--ag-rail-width', '--ag-input-height']) root.style.removeProperty(name);
+        for (const name of ['--ag-glass-alpha', '--ag-brightness', '--ag-art-width', '--ag-rail-width', '--ag-input-height', '--ag-dock-height']) root.style.removeProperty(name);
         layer?.remove();
         layer = undefined;
     }
@@ -81,15 +81,27 @@ async function initialize() {
         const isEditing = Boolean(document.activeElement?.matches('textarea, input:not([type=range]):not([type=checkbox]), [contenteditable="true"]'));
         const keyboard = isEditing && (window.innerWidth < 768 || height < largestViewport - 140);
         root.toggleAttribute('data-ag-keyboard', keyboard);
-        const narrow = window.innerWidth < 375;
-        const rail = settings.decoration && assetReady && !keyboard && !narrow;
-        root.toggleAttribute('data-ag-rail', rail);
-        root.style.setProperty('--ag-rail-width', rail ? `${Math.min(settings.size + 12, Math.floor(window.innerWidth * .22))}px` : '0px');
-        const input = document.querySelector('#form_sheld');
-        root.style.setProperty('--ag-input-height', `${Math.ceil(input?.getBoundingClientRect().height || 88)}px`);
-        const floatingPanel = [...document.querySelectorAll('dialog[open], .popup, .drawer-content.openDrawer')].some(element => element.getClientRects().length > 0);
-        layer.querySelector('.ag-art').hidden = !rail || Boolean(floatingPanel);
+        // Never resize or reposition #sheld: st-brume and TopInfoBar own its layout.
+        root.removeAttribute('data-ag-rail');
+        const inputHost = document.querySelector('#form_sheld');
+        if (inputHost && layer.parentElement !== inputHost) inputHost.prepend(layer);
+        const floatingPanel = [...document.querySelectorAll('dialog[open], .drawer-content.openDrawer')].some(element => {
+            const rect = element.getBoundingClientRect();
+            const style = getComputedStyle(element);
+            return rect.width > 40 && rect.height > 40 && rect.right > 0 && rect.left < innerWidth && rect.bottom > 0 && rect.top < height && style.visibility !== 'hidden' && Number(style.opacity) > .05;
+        });
+        const suppress = keyboard || floatingPanel || height < 420 || !inputHost;
+        const showArt = settings.decoration && assetReady && !suppress;
+        const showBubbles = settings.bubbles && !suppress;
+        layer.hidden = !showArt && !showBubbles;
+        layer.querySelector('.ag-art').hidden = !showArt;
+        layer.querySelector('.ag-bubbles').hidden = !showBubbles;
+        root.style.setProperty('--ag-dock-height', `${showArt ? Math.min(settings.size, height * .14) : 34}px`);
         layer.classList.toggle('ag-animate', settings.bubbles);
+        const motion = panel.querySelector('.ag-motion-status');
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const message = settings.bubbles && reduced ? '系統啟用了「減少動態」，泡泡會保留但不移動。' : '泡泡動畫僅出現在底部裝飾列，不遮住正文。';
+        if (motion.textContent !== message) motion.textContent = message;
     }
     const schedule = () => { if (!frame) frame = requestAnimationFrame(measure); };
     function apply() {
@@ -110,7 +122,9 @@ async function initialize() {
             image.hidden = true;
             if (assetReady) image.src = assetURL;
             layer.append(image);
-            document.body.append(layer);
+            const inputHost = document.querySelector('#form_sheld');
+            if (inputHost) inputHost.prepend(layer);
+            else { layer.hidden = true; document.body.append(layer); }
         }
         schedule();
     }
@@ -129,14 +143,15 @@ async function initialize() {
     }, { signal });
     const observer = new MutationObserver(schedule);
     // Attribute-only read observation: never writes or removes st-brume attributes.
-    observer.observe(root, { attributes: true, attributeFilter: ['data-foret', 'data-foret-skin', 'data-foret-immersive'] });
+    observer.observe(root, { attributes: true, attributeFilter: ['data-foret', 'data-foret-skin', 'data-foret-immersive', 'data-foret-tools'] });
     const bodyObserver = new MutationObserver(records => {
-        if (records.some(record => record.target !== layer && !layer?.contains(record.target))) schedule();
+        if (records.some(record => record.target !== layer && !layer?.contains(record.target) && !record.target.closest?.('#chat'))) schedule();
     });
-    bodyObserver.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['open', 'hidden'] });
+    bodyObserver.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['open', 'hidden', 'class'] });
     window.addEventListener('resize', schedule, { signal, passive: true });
     window.visualViewport?.addEventListener('resize', schedule, { signal, passive: true });
     document.addEventListener('click', schedule, { signal, passive: true });
+    window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', schedule, { signal });
     document.addEventListener('focusin', schedule, { signal });
     document.addEventListener('focusout', schedule, { signal });
     const probe = new Image();
@@ -150,7 +165,7 @@ async function initialize() {
     };
     probe.onerror = () => {
         if (signal.aborted) return;
-        status.textContent = '尚無雙動物原始檔：請放入 assets/penguin-otter.png；目前不顯示插畫。';
+        status.textContent = '圖片載入失敗：請更新 Aqua Glacier 並重新整理。圖片路徑為 assets/penguin-otter.png。';
     };
     probe.src = assetURL;
     window[INSTANCE] = {
