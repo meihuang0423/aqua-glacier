@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "width": 360,
+      "loaded": true,
+      "natural": [
+        941,
+        1672
+      ],
+      "rail": false,
+      "hidden": true,
+      "nonOverlapping": true,
+      "overflow": false,
+      "pointer": "none"
+    },
+    {
+      "width": 375,
+      "loaded": true,
+      "natural": [
+        941,
+        1672
+      ],
+      "rail": true,
+      "hidden": false,
+      "nonOverlapping": true,
+      "overflow": false,
+      "pointer": "none"
+    },
+    {
+      "width": 390,
+      "loaded": true,
+      "natural": [
+        941,
+        1672
+      ],
+      "rail": true,
+      "hidden": false,
+      "nonOverlapping": true,
+      "overflow": false,
+      "pointer": "none"
+    },
+    {
+      "width": 430,
+      "loaded": true,
+      "natural": [
+        941,
+        1672
+      ],
+      "rail": true,
+      "hidden": false,
+      "nonOverlapping": true,
+      "overflow": false,
+      "pointer": "none"
+    }
+  ],
+  "keyboardHidden": true
+}
