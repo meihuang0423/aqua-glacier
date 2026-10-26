@@ -1,0 +1,447 @@
+{
+  "results": [
+    {
+      "name": "Manifest module loaded via actual ST extension loader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Default theme is off",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing combined PNG gives visible status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Native settings headings readable (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom message markup/styles unchanged (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "st-brume settings not modified (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Embedded button works (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow foret/360",
+      "passed": true,
+      "detail": "{\"width\":360,\"scroll\":360,\"send\":{\"left\":10,\"right\":350,\"bottom\":840},\"inputWidth\":331,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport foret/360",
+      "passed": true,
+      "detail": "{\"width\":360,\"scroll\":360,\"send\":{\"left\":10,\"right\":350,\"bottom\":840},\"inputWidth\":331,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable foret/360",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works foret/360",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow foret/375",
+      "passed": true,
+      "detail": "{\"width\":375,\"scroll\":375,\"send\":{\"left\":10,\"right\":365,\"bottom\":840},\"inputWidth\":346,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport foret/375",
+      "passed": true,
+      "detail": "{\"width\":375,\"scroll\":375,\"send\":{\"left\":10,\"right\":365,\"bottom\":840},\"inputWidth\":346,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable foret/375",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works foret/375",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow foret/390",
+      "passed": true,
+      "detail": "{\"width\":390,\"scroll\":390,\"send\":{\"left\":10,\"right\":380,\"bottom\":840},\"inputWidth\":361,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport foret/390",
+      "passed": true,
+      "detail": "{\"width\":390,\"scroll\":390,\"send\":{\"left\":10,\"right\":380,\"bottom\":840},\"inputWidth\":361,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable foret/390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works foret/390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow foret/430",
+      "passed": true,
+      "detail": "{\"width\":430,\"scroll\":430,\"send\":{\"left\":10,\"right\":420,\"bottom\":840},\"inputWidth\":401,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport foret/430",
+      "passed": true,
+      "detail": "{\"width\":430,\"scroll\":430,\"send\":{\"left\":10,\"right\":420,\"bottom\":840},\"inputWidth\":401,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable foret/430",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works foret/430",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selected background preserved (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disable removes decoration and attribute (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disable restores input color (foret)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Native settings headings readable (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom message markup/styles unchanged (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "st-brume settings not modified (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Embedded button works (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow dusty/360",
+      "passed": true,
+      "detail": "{\"width\":360,\"scroll\":360,\"send\":{\"left\":10,\"right\":350,\"bottom\":840},\"inputWidth\":331,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport dusty/360",
+      "passed": true,
+      "detail": "{\"width\":360,\"scroll\":360,\"send\":{\"left\":10,\"right\":350,\"bottom\":840},\"inputWidth\":331,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable dusty/360",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works dusty/360",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow dusty/375",
+      "passed": true,
+      "detail": "{\"width\":375,\"scroll\":375,\"send\":{\"left\":10,\"right\":365,\"bottom\":840},\"inputWidth\":346,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport dusty/375",
+      "passed": true,
+      "detail": "{\"width\":375,\"scroll\":375,\"send\":{\"left\":10,\"right\":365,\"bottom\":840},\"inputWidth\":346,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable dusty/375",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works dusty/375",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow dusty/390",
+      "passed": true,
+      "detail": "{\"width\":390,\"scroll\":390,\"send\":{\"left\":10,\"right\":380,\"bottom\":840},\"inputWidth\":361,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport dusty/390",
+      "passed": true,
+      "detail": "{\"width\":390,\"scroll\":390,\"send\":{\"left\":10,\"right\":380,\"bottom\":840},\"inputWidth\":361,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable dusty/390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works dusty/390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No document horizontal overflow dusty/430",
+      "passed": true,
+      "detail": "{\"width\":430,\"scroll\":430,\"send\":{\"left\":10,\"right\":420,\"bottom\":840},\"inputWidth\":401,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Input within viewport dusty/430",
+      "passed": true,
+      "detail": "{\"width\":430,\"scroll\":430,\"send\":{\"left\":10,\"right\":420,\"bottom\":840},\"inputWidth\":401,\"chatScrollable\":true,\"overflow\":\"auto\"}"
+    },
+    {
+      "name": "Long chat remains scrollable dusty/430",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chat scrolling works dusty/430",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Selected background preserved (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disable removes decoration and attribute (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disable restores input color (dusty)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Settings persist through real server reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decoration never intercepts pointers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reload has one panel and one decoration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reload does not duplicate setting-save listeners",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "No reduced-motion animation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Single combined image loaded in reserved rail",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Illustration does not overlap chat",
+      "passed": true,
+      "detail": "{\"artLeft\":310,\"chatRight\":305}"
+    },
+    {
+      "name": "Illustration hidden at 360",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Input focus hides decoration on mobile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulated keyboard resize keeps input within viewport",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Black forest toolbar still toggles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Native character drawer opens",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Native popup readable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disable clears only own inline variables",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No Aqua Glacier browser exceptions",
+      "passed": true,
+      "detail": "[{\"message\":\"Unexpected token 'I', \\\"Internal S\\\"... is not valid JSON\",\"stack\":\"\"},{\"message\":\"Unexpected token 'I', \\\"Internal S\\\"... is not valid JSON\",\"stack\":\"\"}]"
+    }
+  ],
+  "reports": [
+    {
+      "skin": "foret",
+      "width": 360,
+      "scroll": 360,
+      "send": {
+        "left": 10,
+        "right": 350,
+        "bottom": 840
+      },
+      "inputWidth": 331,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "foret",
+      "width": 375,
+      "scroll": 375,
+      "send": {
+        "left": 10,
+        "right": 365,
+        "bottom": 840
+      },
+      "inputWidth": 346,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "foret",
+      "width": 390,
+      "scroll": 390,
+      "send": {
+        "left": 10,
+        "right": 380,
+        "bottom": 840
+      },
+      "inputWidth": 361,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "foret",
+      "width": 430,
+      "scroll": 430,
+      "send": {
+        "left": 10,
+        "right": 420,
+        "bottom": 840
+      },
+      "inputWidth": 401,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "dusty",
+      "width": 360,
+      "scroll": 360,
+      "send": {
+        "left": 10,
+        "right": 350,
+        "bottom": 840
+      },
+      "inputWidth": 331,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "dusty",
+      "width": 375,
+      "scroll": 375,
+      "send": {
+        "left": 10,
+        "right": 365,
+        "bottom": 840
+      },
+      "inputWidth": 346,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "dusty",
+      "width": 390,
+      "scroll": 390,
+      "send": {
+        "left": 10,
+        "right": 380,
+        "bottom": 840
+      },
+      "inputWidth": 361,
+      "chatScrollable": true,
+      "overflow": "auto"
+    },
+    {
+      "skin": "dusty",
+      "width": 430,
+      "scroll": 430,
+      "send": {
+        "left": 10,
+        "right": 420,
+        "bottom": 840
+      },
+      "inputWidth": 401,
+      "chatScrollable": true,
+      "overflow": "auto"
+    }
+  ],
+  "environment": {
+    "app": "1.19.0",
+    "brume": "3.26.3",
+    "browser": "151.0.7922.173",
+    "realPhone": false,
+    "realKeyboard": false
+  },
+  "baselineErrors": [
+    {
+      "message": "Unexpected token 'I', \"Internal S\"... is not valid JSON",
+      "stack": ""
+    },
+    {
+      "message": "Unexpected token 'I', \"Internal S\"... is not valid JSON",
+      "stack": ""
+    }
+  ]
+}

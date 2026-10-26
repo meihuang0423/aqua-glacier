@@ -1,0 +1,22 @@
+[
+  {
+    "name": "User-data installation discovered",
+    "passed": true
+  },
+  {
+    "name": "Default off in user-data installation",
+    "passed": true
+  },
+  {
+    "name": "User-data installation activates",
+    "passed": true
+  },
+  {
+    "name": "User-data installation persists settings",
+    "passed": true
+  },
+  {
+    "name": "User-data disable cleans decorations",
+    "passed": true
+  }
+]

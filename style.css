@@ -1,0 +1,231 @@
+/* Aqua Glacier 0.1.0 — independent appearance layer.
+   All variables use ag-. No .mes / .mes_text selectors, inherited global color,
+   background image replacement, or third-party variable writes.
+   :is(#ag-specificity, html) is a specificity fence, not a required DOM id.
+   Targeted !important is necessary because st-brume uses important rules. */
+:root[data-ag-theme="on"] {
+  --ag-bg: #D7F3F7;
+  --ag-mint: #BDECE9;
+  --ag-aqua: #8ACDD5;
+  --ag-white: #F3FCFC;
+  --ag-text: #427D88;
+  --ag-secondary: #658F98;
+  --ag-readable: #315F69;
+  --ag-glass-alpha: .78;
+  --ag-brightness: 1;
+  --ag-art-width: 76px;
+  --ag-rail-width: 0px;
+  --ag-input-height: 88px;
+  --ag-glass: rgb(243 252 252 / var(--ag-glass-alpha));
+  --ag-panel: rgb(243 252 252 / max(.96, var(--ag-glass-alpha)));
+  --ag-border: rgb(255 255 255 / .78);
+  --ag-line: rgb(66 125 136 / .30);
+  --ag-shadow: 0 5px 20px rgb(47 112 127 / .09);
+  --ag-radius: 18px;
+}
+/* Paint below existing background images: selected character backgrounds stay intact. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgb(255 255 255 / .68), transparent 54%),
+    radial-gradient(ellipse at 88% 70%, rgb(189 236 233 / .75), transparent 60%),
+    linear-gradient(160deg, var(--ag-white), var(--ag-bg) 48%, var(--ag-aqua));
+  filter: brightness(var(--ag-brightness));
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) {
+  background-color: var(--ag-bg) !important;
+}
+/* Toolbar: never set overflow, position, display, height, or a containing-block filter.
+   This protects st-brume's immersive toggle and fixed drawers. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-bar,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #foret-header {
+  background: linear-gradient(115deg, var(--ag-glass), rgb(215 243 247 / .86)) !important;
+  border-color: var(--ag-border) !important;
+  box-shadow: var(--ag-shadow) !important;
+  color: var(--ag-text) !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #foret-header :is(.fh-name, .fh-sub, .fh-ctx, .fh-btn),
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder .drawer-icon {
+  color: var(--ag-text) !important;
+  text-shadow: none !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #foret-header :is(.fh-ctx, .fh-btn) {
+  background: rgb(243 252 252 / .65) !important;
+  border-color: var(--ag-line) !important;
+  border-radius: 12px;
+}
+/* Only outer input chrome. Existing input handlers, buttons, textarea size remain. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #form_sheld {
+  background: var(--ag-glass) !important;
+  border-color: var(--ag-border) !important;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #send_form {
+  background: var(--ag-glass) !important;
+  border: 1px solid var(--ag-border) !important;
+  border-radius: var(--ag-radius) !important;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .65), var(--ag-shadow) !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #send_form:focus-within {
+  box-shadow: 0 0 0 3px rgb(138 205 213 / .22), var(--ag-shadow) !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #send_textarea {
+  color: var(--ag-readable) !important;
+  background: transparent !important;
+  text-shadow: none !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #send_textarea::placeholder {
+  color: var(--ag-secondary) !important;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #leftSendForm > div,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #rightSendForm > div,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #qr--bar > .qr--button,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #qr--bar > .qr--buttons > .qr--button {
+  color: var(--ag-readable) !important;
+  border-color: var(--ag-line) !important;
+  background: rgb(189 236 233 / .48) !important;
+  border-radius: 12px !important;
+  text-shadow: none !important;
+}
+/* Panels stay nearly opaque for reading. No global form or message-content rules. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder .drawer-content,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #right-nav-panel,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #left-nav-panel,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #foret-ctx,
+:root[data-ag-theme="on"]:is(#ag-specificity, html) dialog.popup {
+  background: var(--ag-panel) !important;
+  color: var(--ag-readable) !important;
+  border: 1px solid var(--ag-border) !important;
+  box-shadow: var(--ag-shadow) !important;
+  text-shadow: none !important;
+  border-radius: var(--ag-radius) !important;
+}
+/* Controls restricted to native settings panel, NOT message HTML. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder .drawer-content :is(.text_pole, select, .menu_button, .inline-drawer-header),
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #right-nav-panel :is(.text_pole, select, .menu_button) {
+  color: var(--ag-readable) !important;
+  background-color: #EDF9FA !important;
+  border-color: var(--ag-line) !important;
+  text-shadow: none !important;
+  border-radius: 10px;
+}
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder .drawer-content select :is(option, optgroup),
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #right-nav-panel select :is(option, optgroup) {
+  color: #315F69 !important;
+  background-color: #F3FCFC !important;
+}
+:root[data-ag-theme="on"] #top-settings-holder .drawer-content :is(input[type=range], input[type=checkbox]) {
+  accent-color: #427D88;
+}
+:root[data-ag-theme="on"] #top-settings-holder .drawer-content :focus-visible,
+:root[data-ag-theme="on"] #send_form :focus-visible {
+  outline: 2px solid #427D88;
+  outline-offset: 2px;
+}
+/* Only native scroll containers; embedded messages keep their own scrollbars. */
+:root[data-ag-theme="on"] :is(#chat, #right-nav-panel, #left-nav-panel, #ag-settings) {
+  scrollbar-width: thin;
+  scrollbar-color: #8ACDD5 transparent;
+}
+/* Optional illustration has a RESERVED rail, never overlays chat or input. */
+:root[data-ag-theme="on"][data-ag-rail]:is(#ag-specificity, html) #sheld {
+  max-width: calc(100% - var(--ag-rail-width)) !important;
+  right: var(--ag-rail-width);
+}
+#ag-decoration, #ag-decoration * {
+  pointer-events: none !important;
+  user-select: none;
+}
+#ag-decoration {
+  position: fixed;
+  inset: 0;
+  z-index: 29;
+  overflow: hidden;
+  contain: layout paint;
+}
+#ag-decoration .ag-art {
+  position: absolute;
+  right: 5px;
+  bottom: calc(var(--ag-input-height) + env(safe-area-inset-bottom, 0px) + 12px);
+  width: min(var(--ag-art-width), calc(var(--ag-rail-width) - 10px));
+  max-height: min(36dvh, 260px);
+  object-fit: contain;
+  object-position: bottom right;
+  opacity: .90;
+}
+#ag-decoration .ag-art[hidden] { display: none; }
+#ag-decoration .ag-bubbles {
+  position: absolute;
+  right: 2px;
+  bottom: 20%;
+  width: 16px;
+  height: 130px;
+  opacity: .45;
+}
+#ag-decoration .ag-bubbles i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgb(120 193 205 / .65);
+  border-radius: 50%;
+  background: rgb(243 252 252 / .22);
+}
+#ag-decoration .ag-bubbles i:nth-child(1) { top: 8%; left: 1px; }
+#ag-decoration .ag-bubbles i:nth-child(2) { top: 48%; left: 6px; width: 4px; height: 4px; }
+#ag-decoration .ag-bubbles i:nth-child(3) { top: 82%; left: 0; width: 9px; height: 9px; }
+#ag-decoration.ag-animate .ag-bubbles i { animation: ag-drift 14s ease-in-out infinite alternate; }
+#ag-decoration.ag-animate .ag-bubbles i:nth-child(2) { animation-delay: -5s; }
+#ag-decoration.ag-animate .ag-bubbles i:nth-child(3) { animation-delay: -9s; }
+@keyframes ag-drift {
+  from { transform: translateY(0); opacity: .25; }
+  to { transform: translateY(-14px); opacity: .65; }
+}
+:root[data-ag-keyboard] #ag-decoration { display: none; }
+/* Our settings remain usable even when theme is OFF. */
+#ag-settings { margin: 10px 0; padding: 12px; border: 1px solid #8ACDD5; border-radius: 14px; }
+#ag-settings > summary { cursor: pointer; font-weight: 600; padding: 4px; }
+#ag-settings small { opacity: .7; margin-inline-start: 8px; }
+#ag-settings .ag-settings-body { display: grid; gap: 14px; padding-top: 12px; }
+#ag-settings .ag-check { display: flex; align-items: center; gap: 10px; }
+#ag-settings .ag-range { display: grid; grid-template-columns: 1fr auto; gap: 6px; }
+#ag-settings .ag-range input { grid-column: 1 / -1; width: 100%; min-height: 28px; }
+#ag-settings output { font-variant-numeric: tabular-nums; }
+#ag-settings p { margin: 0; line-height: 1.65; font-size: .92em; }
+#ag-settings .ag-asset-status { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  :root[data-ag-theme="on"] { --ag-radius: 15px; }
+  #ag-decoration .ag-art { max-height: 28dvh; }
+}
+@media (max-width: 374px) {
+  #ag-decoration .ag-art { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ag-decoration.ag-animate .ag-bubbles i { animation: none; }
+}
+@supports (backdrop-filter: blur(1px)) {
+  :root[data-ag-theme="on"]:is(#ag-specificity, html) #send_form {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+/* Native popup controls only: leave custom message buttons alone. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) dialog.popup :is(.popup-button-ok, .popup-button-cancel, .popup-button-close) {
+  color: var(--ag-readable) !important;
+  background: #DDF1F2 !important;
+  border: 1px solid var(--ag-line) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+/* Heading text explicitly styled by black forest needs a scoped override. */
+:root[data-ag-theme="on"]:is(#ag-specificity, html) #top-settings-holder .drawer-content :is(h3, h4, h5) {
+  color: var(--ag-readable) !important;
+  text-shadow: none !important;
+}

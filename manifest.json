@@ -1,0 +1,11 @@
+{
+  "display_name": "Aqua Glacier｜冰川海洋",
+  "loading_order": 200,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Aqua Glacier",
+  "version": "0.1.0",
+  "auto_update": false
+}
